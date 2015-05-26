@@ -1,7 +1,9 @@
 package rainimg
 
 import (
+	"flag"
 	"fmt"
+	"github.com/golang/glog"
 	"image"
 	"image/draw"
 	_ "image/gif"
@@ -12,8 +14,6 @@ import (
 	"os"
 	"path"
 	"time"
-	"github.com/golang/glog"
-	"flag"
 )
 
 const (

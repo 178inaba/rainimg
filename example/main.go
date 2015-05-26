@@ -1,9 +1,9 @@
 package main
 
 import (
+	"flag"
 	"github.com/178inaba/rainimg"
 	"github.com/golang/glog"
-	"flag"
 )
 
 func main() {
