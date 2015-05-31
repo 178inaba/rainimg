@@ -29,7 +29,6 @@ const (
 
 func init() {
 	flag.Parse()
-	glog.Info("flag parse")
 }
 
 func GetImgPath() string {

@@ -1,13 +1,10 @@
 package main
 
 import (
-	"flag"
+	"fmt"
 	"github.com/178inaba/rainimg"
-	"github.com/golang/glog"
 )
 
 func main() {
-	flag.Parse()
-
-	glog.Info("img path:", rainimg.GetImgPath())
+	fmt.Println("img path:", rainimg.GetImgPath())
 }
