@@ -59,8 +59,8 @@ func GetImgPath() string {
 	b := rgba.Bounds()
 	p := image.Point{0, 0}
 	draw.Draw(rgba, b, mapSrc, p, draw.Src)
-	draw.Draw(rgba, b, mskSrc, p, draw.Over)
 	draw.Draw(rgba, b, meshSrc, p, draw.Over)
+	draw.Draw(rgba, b, mskSrc, p, draw.Over)
 
 	os.Mkdir(encDir, os.ModePerm)
 	encFile, _ := os.Create(encFilePath)
