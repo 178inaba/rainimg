@@ -32,7 +32,8 @@ func init() {
 }
 
 func GetImgPath() string {
-	tcTime := time.Now().Truncate(5 * time.Minute)
+	jst, _ := time.LoadLocation("Asia/Tokyo")
+	tcTime := time.Now().In(jst).Truncate(5 * time.Minute)
 	encFilePath := fmt.Sprintf(encDir+encNameFmt, tcTime.Format(layout))
 	_, err := os.Stat(encFilePath)
 	if err == nil {
