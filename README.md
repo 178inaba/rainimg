@@ -1,6 +1,3 @@
 # rainimg
 
-rainimg is create tokyo amesh image(png)
-
-tokyo amesh
-http://tokyo-ame.jwa.or.jp/
+rainimg is create [tokyo amesh](http://tokyo-ame.jwa.or.jp/) image(png)
